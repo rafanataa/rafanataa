@@ -1,12 +1,21 @@
-- 👋 Hi, I’m @rafanataa
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+import random
+import os
+class ceritaku:
+    def _init_(self):
+        Makanan = [ "Ayam crispy", "Nuggets"]
+        randomMakanan = random.choice(Makanan)
 
-<!---
-rafanataa/rafanataa is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+        Restaurant = ["KFC", "Mc Donald"]
+        randomRestaurant = random.choice(Restaurant)
+
+        Makanan2 = ["Saus tomat", "Saus sambal"]
+        randomMakanan2 = random.choice(Makanan2)
+        Minuman = ["Sprite", "Cocacola", "Fanta"]
+        randomMinuman = random.choice(Minuman)
+        os.system("cls")
+        print(f"Saya makan nasi,saya memesan paket combo dan menyajikan makanan di atas meja,saya makan nasi dengan makanan {randomMakanan} pakai {randomMakanan2} dan saya mendapatkan minuman {randomMinuman},saya makan di{randomRestaurant}")
+        def main():
+            run = ceritaku()
+
+            if _name_ == "_main_":
+                main()
